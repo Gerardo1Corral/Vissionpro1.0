@@ -1,0 +1,88 @@
+<div class="row">
+  <div class="col-lg-6">
+    <nb-card>
+      <nb-card-header>Configuración de Espacios Comunes</nb-card-header>
+      <nb-card-body>
+        
+          <small class="col-sm-6 form-text">Nombre del Espacio Común</small>
+          <select class="col-sm-6 form-control">
+            <option> </option>
+            <option>Club House</option>
+            <option>Gimnacio</option>
+            <option>Qincho</option>
+          </select>
+    
+          <ul> </ul>
+        
+          <div class="row full-name-inputs">
+              <div class="col-sm-6 form-group">
+                <small class="form-text">Valor por uso de Espacio Común</small>
+                <input type="text" placeholder="$" class="form-control"/>
+              </div>
+      
+              <div class="col-sm-6 form-group">
+                <small class="form-text">Valor por Garantía</small>
+                <input type="text" placeholder="$" class="form-control"/>
+              </div>
+          </div>
+        
+          <small class="form-text">Descripción del Espacio Común</small>
+          <div class="input-group">
+              <textarea rows="1" placeholder="Text Area" class="form-control"></textarea>
+          </div>
+
+        <div class="row full-name-inputs">
+          <div class="form-group">
+              <label>Bloques de Arrendamiento</label>
+              <select multiple class="form-control">
+                <option>Por Hora</option>
+                <option>Todo el Día</option>
+                <option>Mañana, Tadre, Noche</option>
+                <option>Todo el Día</option>
+              </select>
+            </div>
+
+            <div class="demo-checkboxes col-sm-4">
+                <ul> </ul>
+                <nb-checkbox [value]="true">Requiere confirmación del Administrador</nb-checkbox>
+                <nb-checkbox [value]="true">Con Cargo a los Gastos Comunes</nb-checkbox>
+                <label class="custom-control custom-checkbox">
+                  <input type="checkbox" class="custom-control-input">
+                  <span class="custom-control-indicator"></span>
+                  <span class="custom-control-description">Requiere lista de Invitados..</span>
+                </label>
+              </div>
+          </div>
+
+
+
+          <button class="btn btn-primary btn-semi-round btn-demo">Enviar</button>
+          <a href="#/pages/dashboard"class="btn btn-success btn-semi-round btn-demo">Volver</a>
+          <a href="#/pages/forms/dcomunidad"class="btn btn-danger btn-semi-round btn-demo">dCOMUNIDAD</a>
+
+ <!--     <a href="#/pages/forms/ecomunes"class="btn btn-warning btn-semi-round btn-demo">Volver</a>
+          <a href="#/pages/forms/ecomunes"class="btn btn-info btn-semi-round btn-demo">Volver</a>
+          <a href="#/pages/forms/dcomunidad"class="btn btn-danger btn-semi-round btn-demo">Volver</a>
+          <a href="#/pages/forms/dcomunidad"class="btn btn-ghost btn-semi-round btn-demo">Volver</a> -->
+
+          </nb-card-body>
+    </nb-card>
+</div>
+
+
+
+  <div class="col-lg-6">    
+    <nb-card>
+      <nb-card-header>Ingresar Lista de Invitados</nb-card-header>
+      <nb-card-body>
+
+          <small class="form-text">Texto para Lista de Invitados</small>
+          <div class="input-group">
+              <textarea rows="10" placeholder="Text Area" class="form-control"></textarea>
+          </div>
+
+      </nb-card-body>
+    </nb-card>
+
+  </div>
+</div>

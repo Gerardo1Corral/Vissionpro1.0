@@ -1,0 +1,20 @@
+<div class="col-lg-9">
+<nb-card>
+  <nb-card-header>
+      Conciliador Maestro
+  </nb-card-header>
+
+
+  <nb-card-body>
+    <div class="col-sm-2 form-group">
+    </div>
+
+    <div class="col-sm-2 form-group">
+      <a href="#/pages/tables/smart-conciliacion"class="btn btn-hero-danger btn-lg">VOLVER</a>
+    </div>
+  
+    <ng2-smart-table [settings]="settings" [source]="source" (deleteConfirm)="onDeleteConfirm($event)">
+    </ng2-smart-table>
+  </nb-card-body>
+</nb-card>
+</div>

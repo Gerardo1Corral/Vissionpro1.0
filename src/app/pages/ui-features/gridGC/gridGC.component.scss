@@ -1,0 +1,102 @@
+@import '../../../@theme/styles/themes';
+
+@include nb-install-component() {
+
+  .show-grid {
+    .row {
+      margin: -0.5rem;
+    }
+
+    div[class^=col-] {
+      padding: 0.1rem;
+      box-sizing: border-box;
+
+      div {
+        text-align: center;
+        background-color: nb-theme(color-bg-active);
+        padding: 0.75rem 0.25rem;
+        border-radius: 0.25rem;
+      }
+    }
+  }
+
+  /* /////////////////////////////////// */
+
+  .show-grid-celeste {
+    .row {
+      margin: -0.5rem;
+    }
+
+    div[class^=col-] {
+      padding: 0.1rem;
+      box-sizing: border-box;
+
+      div {
+        text-align: center;
+  /* background-color: nb-theme(color-bg-active); */
+        background-color: rgba(38, 143, 190, 100);
+        padding: 0.75rem 0.25rem;
+        border-radius: 0.25rem;
+      }
+    }
+  }
+
+
+  /* /////////////////////////////////// */
+
+  .show-grid-colonial {
+    .row {
+      margin: -0.5rem;
+    }
+
+    div[class^=col-] {
+      padding: 0.1rem;
+      box-sizing: border-box;
+
+      div {
+        text-align: center;
+  /* background-color: nb-theme(color-bg-active); */
+        background-color: rgba(226, 30, 30, 100);
+        padding: 0.75rem 0.25rem;
+        border-radius: 0.25rem;
+      }
+    }
+  }
+
+
+  /* /////////////////////////////////// */
+
+  .show-grid-ocre {
+    .row {
+      margin: -0.5rem;
+    }
+
+    div[class^=col-] {
+      padding: 0.1rem;
+      box-sizing: border-box;
+
+      div {
+        text-align: center;
+  /* background-color: nb-theme(color-bg-active); */
+        background-color: rgba(240, 148, 21, 100);
+        padding: 0.75rem 0.25rem;
+        border-radius: 0.25rem;
+      }
+    }
+  }
+
+    /* /////////////////////////////////// */
+
+
+  .grid-h {
+    margin-top: 1.5rem;
+
+    &:first-child {
+      margin-top: 0;
+    }
+  }
+
+  .table-responsive {
+    margin-top: 1rem;
+  }
+}

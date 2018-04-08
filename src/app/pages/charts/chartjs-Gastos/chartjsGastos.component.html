@@ -1,0 +1,154 @@
+<div class="row">
+
+
+  <div class="col-lg-12">
+    <div>Ingresar| Fecha Inicio (MM/AA)</div>
+    <div>Ingresar Fecha Final (MM/AA)</div>
+  
+    <nb-card>
+      <nb-card-header>Gastos Mensuales</nb-card-header>
+      <nb-card-body>
+        <ngx-chart2jsGastos-bar></ngx-chart2jsGastos-bar>
+      </nb-card-body>
+    </nb-card>
+  </div>
+
+
+  <div class="row">
+    <div class="col-lg-12 form-group">
+        <nb-card>
+        <nb-card-body>         
+  
+          <div class="table-responsive">
+            <table class="table table-bordered table-striped">
+                <tr>
+                  <th><small>__________ __________</small></th>
+                  <th><small>Gastos de Administración</small></th>
+                  <th><small>Gastos de Consumo</small></th>
+                  <th><small>Gastos de Mantención</small></th>
+                  <th><small>Gastos de Reparación</small></th>
+                </tr>
+                <tr>
+                  <th><small>Enero 2017</small></th>
+                  <th><small>$5.433.050</small></th>
+                  <th><small>$1.256.287</small></th>
+                  <th><small>$1.453.323</small></th>
+                  <th><small>$1.196.950</small></th>
+                </tr>
+                <tr>
+                  <th><small>Febrero 2017</small></th>
+                  <th><small>$5.512.677</small></th>
+                  <th><small>$895.100</small></th>
+                  <th><small>$1.650.837</small></th>
+                  <th><small>$789.667</small></th>
+                </tr>
+                <tr>
+                  <th><small>Marzo 2017</small></th>
+                  <th><small>$5.320.675</small></th>
+                  <th><small>$1.088.307</small></th>
+                  <th><small>$1.033.131</small></th>
+                  <th><small>$495.703</small></th>
+                </tr>
+                <tr>
+                  <th><small>Abril 2017</small></th>
+                  <th><small>$6.370.943</small></th>
+                  <th><small>$705.650</small></th>
+                  <th><small>$1.154.707</small></th>
+                  <th><small>$2.633.260</small></th>
+                </tr>
+                <tr>
+                  <th><small>Mayo 2017</small></th>
+                  <th><small>$5.289.984</small></th>
+                  <th><small>$755.760</small></th>
+                  <th><small>$833.411</small></th>
+                  <th><small>$2.851.320</small></th>
+                </tr>
+                <tr>
+                  <th><small>Junio 2017</small></th>
+                  <th><small>$5.512.677</small></th>
+                  <th><small>$895.100</small></th>
+                  <th><small>$1.196.950</small></th>
+                  <th><small>$789.667</small></th>
+                </tr>
+
+            </table>
+          </div>
+        </nb-card-body>
+ 
+ 
+        <nb-card-footer>
+          Total de Gastos por Mes
+        </nb-card-footer>
+ 
+      </nb-card>
+    </div>
+  </div>
+</div>
+
+<!-- 
+<nb-card>
+  <nb-card-header>Hero Buttons</nb-card-header>
+  <nb-card-body>
+    <div class="row">
+      <div class="example-container col-sm-6 col-md-4 col-xl-3 col-xxxl-2" *ngFor="let hb of settings">
+        <div class="container-title">
+          <span>{{ hb.title }}</span>
+        </div>
+        <div class="container-btn">
+          <button class="btn {{ hb.class }} btn-demo">{{ hb.buttonTitle }}</button>
+        </div>
+        <div class="{{ hb.container }}">
+          <div class="state-container" *ngIf="hb[themeName].border">
+            <div class="state-value border"></div>
+            <div class="state-details">
+              <span class="header">Border</span>
+              <span class="subheader">{{ hb[themeName].border }}</span>
+            </div>
+          </div>
+          <div class="state-container" *ngIf="hb[themeName].gradientLeft">
+            <div class="state-value gradient"></div>
+            <div class="state-details">
+              <span class="header">Linear Gradient</span>
+              <span class="subheader">{{ hb[themeName].gradientLeft }}</span>
+              <span class="subheader">{{ hb[themeName].gradientRight }}</span>
+            </div>
+          </div>
+          <div class="state-container">
+            <div class="state-value bevel" [ngClass]="{ 'none': !hb[themeName].bevel }"></div>
+            <div class="state-details" *ngIf="hb[themeName].bevel">
+              <span class="header">Bevel</span>
+              <span class="subheader">0 3px 0 0</span>
+              <span class="subheader">{{ hb[themeName].bevel }}</span>
+            </div>
+            <div class="state-details" *ngIf="!hb[themeName].bevel">
+              <span class="header">No Bevel</span>
+            </div>
+          </div>
+          <div class="state-container">
+            <div class="state-value shadow" [ngClass]="{ 'none': !hb[themeName].shadow }"></div>
+            <div class="state-details" *ngIf="hb[themeName].shadow">
+              <span class="header">Shadow</span>
+              <span class="subheader">0 4px 10px 0</span>
+              <span class="subheader">{{ hb[themeName].shadow }}</span>
+            </div>
+            <div class="state-details" *ngIf="!hb[themeName].shadow">
+              <span class="header">No Shadow</span>
+            </div>
+          </div>
+          <div class="state-container">
+            <div class="state-value glow" [ngClass]="{ 'none': !hb[themeName].glow }"></div>
+            <div class="state-details" *ngIf="hb[themeName].glow">
+              <span class="header">Glow</span>
+              <span class="subheader">0 2px 12px 0</span>
+              <span class="subheader">{{ hb[themeName].glow }}</span>
+            </div>
+            <div class="state-details" *ngIf="!hb[themeName].glow">
+              <span class="header">No Glow</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </nb-card-body>
+</nb-card>
+-->

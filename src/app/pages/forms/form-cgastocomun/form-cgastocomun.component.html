@@ -1,0 +1,140 @@
+<div class="row"> 
+ <div class="col-lg-6">
+
+  <nb-card>  
+  <nb-card-header>Configuración de Gasto Común</nb-card-header>
+      <nb-card-body>
+
+        <div class="row full-name-inputs">
+
+              <div class="col-sm-6 form-group">
+                <small class="form-text">Monto a Prorratear</small>
+                <input type="text" placeholder="$" class="form-control"/>
+              </div>
+      
+              <div class="col-sm-6 form-group">
+                <small class="form-text">Día de Cierre de Gasto Común</small>
+                <input type="text" placeholder="N°" class="form-control"/>
+              </div>
+ 
+              <div class="col-sm-6 form-group">
+                  <small class="form-text">Nombre Banco</small>
+                  <input type="text" placeholder="" class="form-control"/>
+               </div>
+
+               <div class="col-sm-6 form-group">
+                  <small class="form-text">Cuenta Banco</small>
+                  <input type="text" placeholder="N°" class="form-control"/>
+               </div>
+
+               <div class="col-sm-6 form-group">
+                  <small class="form-text">Logo Comunidad</small>
+                  <input type="text" placeholder="Subir Logo de la Comunidad" class="form-control"/>
+               </div>
+               <div class="col-sm-6 form-group">
+                  <small class="form-text">Firma Administración</small>
+                  <input type="text" placeholder="Subir Logo de Firma" class="form-control"/>
+               </div>
+    
+               
+               <div class="col-sm-6 form-group">
+                  <small class="form-text">Modificar Folios (Si o No)</small>
+                  <select class="form-control">
+                    <option> </option>
+                    <option>Si</option>
+                    <option>No</option>
+                  </select>
+                </div>
+        
+                <div class="col-sm-6 form-group">
+                    <small class="form-text">Categorías Centro de Costo</small>
+                    <select class="form-control">
+                      <option> </option>
+                      <option>	1.Gastos Adm - Aguinaldo	</option>
+                      <option>	1.Gastos Adm - Bonos	</option>
+                      <option>	1.Gastos Adm - Finiquitos	</option>
+                      <option>	1.Gastos Adm - Imposiciones	</option>
+                      <option>	1.Gastos Adm - Otros Gastos	</option>
+                      <option>	1.Gastos Adm - Reemplazos	</option>
+                      <option>	1.Gastos Adm - Sueldos	</option>
+                      <option>	1.Gastos Adm - Uniformes	</option>
+                      <option>	1.Gastos Adm - Proyectos	</option>
+                      <option>	1.Gastos Adm - Fondo Mutuo	</option>
+                      <option>	1.Gastos Adm - Cuota Especial	</option>
+                      <option>	2.Mantención - Alcantarillados	</option>
+                      <option>	2.Mantención - Caja chica	</option>
+                      <option>	2.Mantención - Eléctrica	</option>
+                      <option>	2.Mantención - Iluminación	</option>
+                      <option>	2.Mantención - Otros Gastos	</option>
+                      <option>	2.Mantención - Piscina	</option>
+                      <option>	2.Mantención - Jardín	</option>
+                      <option>	2.Mantención - Porton	</option>
+                      <option>	2.Mantención - Gasfiter	</option>
+                      <option>	2.Mantención - Sala de bombas	</option>
+                      <option>	2.Mantención - Techos	</option>
+                      <option>	3.Reparación - Sala de Bombas	</option>
+                      <option>	3.Reparación - Cámaras	</option>
+                      <option>	3.Reparación - Jardín	</option>
+                      <option>	3.Reparación - Citofonos	</option>
+                      <option>	3.Reparación - Eléctricas	</option>
+                      <option>	3.Reparación - Otros Gastos	</option>
+                      <option>	3.Reparación - Techos	</option>
+                      <option>	4.Consumo - Gas	</option>
+                      <option>	4.Consumo - Agua potable	</option>
+                      <option>	4.Consumo - Telefonía e Internet	</option>
+                      <option>	4.Consumo - Útiles de Aseo 	</option>
+                      <option>	4.Consumo - Insumos Jardín	</option>
+                      <option>	4.Consumo - Oficina/Impresión	</option>                      
+                    </select>
+                  </div>
+
+                  <small class="form-text">Texto 1 de Gasto Común</small>
+                  <div class="input-group">
+                      <textarea rows="2" placeholder="Text Area" class="form-control"></textarea>
+                  </div>
+        
+                  <small class="form-text">Texto 2 de Gasto Común</small>
+                  <div class="input-group">
+                      <textarea rows="2" placeholder="Text Area" class="form-control"></textarea>
+                  </div>
+        
+          </div>
+
+
+      <ul> </ul>
+
+      <button class="btn btn-primary btn-semi-round btn-demo">Enviar</button>
+      <a href="#/pages/dashboard"class="btn btn-success btn-semi-round btn-demo">Volver</a>
+      <a href="#/pages/forms/dcomunidad"class="btn btn-danger btn-semi-round btn-demo">DCOMUNIDAD</a>
+
+      </nb-card-body>
+    </nb-card>
+</div>    
+
+
+<div class="col-lg-6">    
+    <nb-card>
+      <nb-card-header>Configuración de Correos</nb-card-header>
+      <nb-card-body>
+          
+        <small class="form-text">Notificar a los correos cuando se emita el Gasto Común</small>
+          <div class="input-group">
+              <textarea rows="5" placeholder="Text Area" class="form-control"></textarea>
+          </div>
+
+          <small class="form-text">Notificar a los correos cuando se emita el comprobante de pago</small>
+          <div class="input-group">
+              <textarea rows="5" placeholder="Text Area" class="form-control"></textarea>
+          </div>
+
+             <ul></ul>
+             <ul></ul>
+
+      </nb-card-body>
+    </nb-card>
+
+
+  </div>
+
+</div>
+
